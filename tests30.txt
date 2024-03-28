@@ -1,0 +1,153 @@
+Batchsize 20
+Epoch 20
+Learn rate 0.005
+[1,     2] loss: 4.589
+[2,     2] loss: 3.395
+[3,     2] loss: 3.582
+[4,     2] loss: 3.545
+[5,     2] loss: 3.375
+[6,     2] loss: 3.298
+[7,     2] loss: 3.303
+[8,     2] loss: 2.830
+[9,     2] loss: 2.690
+[10,     2] loss: 1.362
+[11,     2] loss: 1.374
+[12,     2] loss: 0.918
+[13,     2] loss: 0.765
+[14,     2] loss: 0.435
+[15,     2] loss: 0.127
+[16,     2] loss: 0.263
+[17,     2] loss: 0.191
+[18,     2] loss: 0.082
+[19,     2] loss: 0.023
+[20,     2] loss: 0.095
+Finished Training
+GroundTruth:  anger anger anger anger anger disgust disgust disgust disgust disgust
+Predicted:  anger neutral neutral sad   neutral neutral anger neutral anger neutral
+Accuracy of the network on the 10000 test images: 20 %
+Accuracy for class: anger is 20.0 %
+Accuracy for class: disgust is 0.0 %
+Accuracy for class: fear  is 20.0 %
+Accuracy for class: happy is 0.0 %
+Accuracy for class: sad   is 40.0 %
+Accuracy for class: surprised is 0.0 %
+Accuracy for class: neutral is 60.0 %
+
+Epoch 19
+Batch Size 20
+Learn Rate 0.005
+[1,     2] loss: 4.547
+[2,     2] loss: 3.037
+[3,     2] loss: 3.483
+[4,     2] loss: 3.013
+[5,     2] loss: 3.300
+[6,     2] loss: 3.138
+[7,     2] loss: 3.105
+[8,     2] loss: 3.150
+[9,     2] loss: 2.601
+[10,     2] loss: 1.904
+[11,     2] loss: 1.859
+[12,     2] loss: 0.846
+[13,     2] loss: 0.666
+[14,     2] loss: 0.329
+[15,     2] loss: 0.447
+[16,     2] loss: 0.427
+[17,     2] loss: 0.133
+[18,     2] loss: 0.011
+[19,     2] loss: 0.097
+Finished Training
+GroundTruth:  anger anger anger anger anger disgust disgust disgust disgust disgust
+Predicted:  surprised anger anger happy anger fear  disgust anger anger anger
+Accuracy of the network on the 10000 test images: 20 %
+Accuracy for class: anger is 60.0 %
+Accuracy for class: disgust is 20.0 %
+Accuracy for class: fear  is 0.0 %
+Accuracy for class: happy is 20.0 %
+Accuracy for class: sad   is 20.0 %
+Accuracy for class: surprised is 20.0 %
+Accuracy for class: neutral is 0.0 %
+
+Epoch 20
+Batch Size 20
+Learn Rate 0.005
+[1,     2] loss: 4.619
+Accuracy of the network: 20 %
+[2,     2] loss: 3.616
+Accuracy of the network: 15 %
+[3,     2] loss: 3.470
+Accuracy of the network: 25 %
+[4,     2] loss: 3.169
+Accuracy of the network: 45 %
+[5,     2] loss: 2.759
+Accuracy of the network: 40 %
+[6,     2] loss: 2.788
+Accuracy of the network: 55 %
+[7,     2] loss: 3.150
+Accuracy of the network: 30 %
+[8,     2] loss: 2.428
+Accuracy of the network: 50 %
+[9,     2] loss: 2.594
+Accuracy of the network: 60 %
+[10,     2] loss: 2.062
+Accuracy of the network: 70 %
+[11,     2] loss: 1.964
+Accuracy of the network: 75 %
+[12,     2] loss: 1.196
+Accuracy of the network: 85 %
+Finished Training
+GroundTruth:  anger anger anger anger anger disgust disgust disgust disgust disgust
+Accuracy of the network on the 10000 test images: 11 %
+Accuracy for class: anger is 0.0 %
+Accuracy for class: disgust is 40.0 %
+Accuracy for class: fear  is 20.0 %
+Accuracy for class: happy is 0.0 %
+Accuracy for class: sad   is 20.0 %
+Accuracy for class: surprised is 0.0 %
+Accuracy for class: neutral is 0.0 %
+
+Epoch 16
+Batch Size 30
+Learn Rate 0.003
+[1,     2] loss: 9.688
+Accuracy of the network: 0 %
+[2,     2] loss: 3.420
+Accuracy of the network: 36 %
+[3,     2] loss: 3.285
+Accuracy of the network: 20 %
+[4,     2] loss: 3.470
+Accuracy of the network: 46 %
+[5,     2] loss: 3.452
+Accuracy of the network: 26 %
+[6,     2] loss: 2.859
+Accuracy of the network: 30 %
+[7,     2] loss: 2.817
+Accuracy of the network: 30 %
+[8,     2] loss: 3.050
+Accuracy of the network: 33 %
+[9,     2] loss: 2.532
+Accuracy of the network: 60 %
+[10,     2] loss: 1.988
+Accuracy of the network: 70 %
+[11,     2] loss: 2.489
+Accuracy of the network: 53 %
+[12,     2] loss: 1.171
+Accuracy of the network: 80 %
+[13,     2] loss: 1.235
+Accuracy of the network: 80 %
+[14,     2] loss: 0.525
+Accuracy of the network: 83 %
+[15,     2] loss: 0.538
+Accuracy of the network: 93 %
+[16,     2] loss: 0.144
+Accuracy of the network: 100 %
+Finished Training
+GroundTruth:  anger anger anger anger anger disgust disgust disgust disgust disgust
+Predicted:  happy neutral anger sad   anger fear  anger anger surprised anger
+Accuracy of the network on the 10000 test images: 22 %
+Accuracy for class: anger is 40.0 %
+Accuracy for class: disgust is 0.0 %
+Accuracy for class: fear  is 20.0 %
+Accuracy for class: happy is 0.0 %
+Accuracy for class: sad   is 40.0 %
+Accuracy for class: surprised is 20.0 %
+Accuracy for class: neutral is 40.0 %
