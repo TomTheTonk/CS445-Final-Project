@@ -73,8 +73,8 @@ class Net(nn.Module):
         x = self.batchnorm1(x)
         x = self.pool(((F.relu(self.conv2(x)))))
         x = self.batchnorm2(x)
-        x = self.pool(F.relu(self.conv3(x)))
-        x = self.batchnorm3(x)
+        #x = self.pool(F.relu(self.conv3(x)))
+        #x = self.batchnorm3(x)
         x = torch.flatten(x, 1) # flatten all dimensions except batch
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
