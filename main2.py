@@ -60,7 +60,7 @@ class Net(nn.Module):
         self.fc1 = nn.Linear(250000, 512)
         self.fc2 = nn.Linear(512, 200)
         self.fc3 = nn.Linear(200, 64)
-        self.fc4 = nn.Linear(64, 10)
+  
 
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
@@ -68,8 +68,7 @@ class Net(nn.Module):
         x = torch.flatten(x, 1) # flatten all dimensions except batch
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        x = F.relu(self.fc3(x))
-        x = self.fc4(x)
+        x = self.fc3(x)
         return x
    
 if __name__ == '__main__':

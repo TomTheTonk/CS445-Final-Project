@@ -25,8 +25,8 @@ import torch.optim as optim
 import warnings
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 warnings.filterwarnings("ignore")
-TRAIN_DATA_PATH = "facedata/archive/train/"
-TEST_DATA_PATH = "facedata/archive/test/"
+TRAIN_DATA_PATH = "facedata/archive2/train/"
+TEST_DATA_PATH = "facedata/archive2/test/"
 batch_size = 50
 epoch = 50
 learnRate = 0.003
@@ -52,38 +52,47 @@ def imshow(img):
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
     plt.show()
+
 class Net(nn.Module):
     def __init__(self):
         super().__init__()
-        self.conv1 = nn.Conv2d(3, 40, 5) #was 30 output for early tests
+        self.conv1 = nn.Conv2d(3, 6, (3,3)) 
+        self.batchnorm1 = nn.BatchNorm2d(6)
         self.pool = nn.MaxPool2d(2, 2)
-        self.conv2 = nn.Conv2d(40, 16, 5)
-        self.fc1 = nn.Linear(1296, 120)
+        self.conv2 = nn.Conv2d(6, 16, (3,3))
+        self.batchnorm2 = nn.BatchNorm2d(16)
+        self.conv3 = nn.Conv2d(16, 32, (3,3))
+        self.batchnorm3 = nn.BatchNorm2d(32)
+        self.fc1 = nn.Linear(1600, 120)
         self.fc2 = nn.Linear(120, 84)
         self.fc3 = nn.Linear(84, 10)
        
 
     def forward(self, x):
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
+        x = self.pool(((F.relu(self.conv1(x)))))
+        x = self.batchnorm1(x)
+        x = self.pool(((F.relu(self.conv2(x)))))
+        x = self.batchnorm2(x)
+        #x = self.pool(F.relu(self.conv3(x)))
+        #x = self.batchnorm3(x)
         x = torch.flatten(x, 1) # flatten all dimensions except batch
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        
         x = self.fc3(x)
         return x
    
 if __name__ == '__main__':
 # get some random training images
-    #dataiter = iter(trainloader)
-    #images, labels = next(dataiter)
+    dataiter = iter(trainloader)
+    images, labels = next(dataiter)
     print("Epoch", epoch)
     print("Batch Size", batch_size)
     print("Learn Rate", learnRate)
 # show images
-    #imshow(torchvision.utils.make_grid(images))
-# print labels
-    #print(' '.join(f'{classes[labels[j]]:5s}' for j in range(batch_size)))
+    print(' '.join(f'{classes[labels[j]]:5s}' for j in range(batch_size)))
+    imshow(torchvision.utils.make_grid(images))
+
+    
 
     accuracy = 0
     while accuracy  < 50:
