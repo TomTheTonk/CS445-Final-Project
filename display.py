@@ -26,19 +26,11 @@ import torch.optim as optim
 import warnings
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 warnings.filterwarnings("ignore")
-TRAIN_DATA_PATH = "facedata/archive2/train/"
 TEST_DATA_PATH = "facedata/archive2/test/"
 batch_size = 55
-epochRun = 200
-learnRate = 0.005
-flag = False
-trainset = torchvision.datasets.ImageFolder(TRAIN_DATA_PATH, transform=transform)
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
-                                          shuffle=True, num_workers=2)
-
 testset = torchvision.datasets.ImageFolder(TEST_DATA_PATH, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size,
-                                         shuffle=False, num_workers=2)
+                                         shuffle=True, num_workers=2)
 
 classes = ('anger', 'disgust', 'fear', 'happy', 'sad', 'surprised', 'neutral')
 
@@ -78,11 +70,11 @@ class Net(nn.Module):
     
     def forward(self, x):
         x = self.pool(((F.relu(self.conv1(x)))))
-        x = self.dropout(self.batchnorm1(x))
+        x = (self.batchnorm1(x))
         x = self.pool(((F.relu(self.conv2(x)))))
-        x = self.dropout(self.batchnorm2(x))
+        x = (self.batchnorm2(x))
         x = self.pool(F.relu(self.conv3(x)))
-        x = self.dropout(self.batchnorm3(x))
+        x = (self.batchnorm3(x))
         #x = self.pool(F.relu(self.conv4(x)))
         #x = self.batchnorm4(x)
         #x = self.pool(F.relu(self.conv5(x)))
@@ -106,12 +98,13 @@ if __name__ == '__main__':
     print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(5)))
     net = Net()
     net.load_state_dict(torch.load(TEST))
-    outputs = net(images)
-    _, predicted = torch.max(outputs, 1)
+    with torch.no_grad():
+        outputs = net(images)
+        _, predicted = torch.max(outputs, 1)
 
     print('Predicted: ', ' '.join(f'{classes[predicted[j]]:5s}'
                             for j in range(5)))
-    imshow(torchvision.utils.make_grid(images))
+    #imshow(torchvision.utils.make_grid(images))
     correct = 0
     total = 0
     # since we're not training, we don't need to calculate the gradients for our outputs
