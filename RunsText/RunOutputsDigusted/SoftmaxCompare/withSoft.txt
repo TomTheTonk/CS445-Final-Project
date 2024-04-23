@@ -1,0 +1,244 @@
+Epoch 200
+Batch Size 55   
+Learn Rate 0.005
+Running on GPU
+[1,   500] loss: 2.128
+Accuracy of the network on the 10000 test images: 38 %
+Highest Accurracy is 38 % from Epoch 1
+[2,   500] loss: 2.008
+Accuracy of the network on the 10000 test images: 43 %
+Highest Accurracy is 43 % from Epoch 2
+[3,   500] loss: 1.967
+Accuracy of the network on the 10000 test images: 45 %
+Highest Accurracy is 45 % from Epoch 3
+[4,   500] loss: 1.942
+Accuracy of the network on the 10000 test images: 46 %
+Highest Accurracy is 46 % from Epoch 4
+[5,   500] loss: 1.916
+Accuracy of the network on the 10000 test images: 46 %
+Highest Accurracy is 46 % from Epoch 4
+[6,   500] loss: 1.889
+Accuracy of the network on the 10000 test images: 47 %
+Highest Accurracy is 47 % from Epoch 6
+[7,   500] loss: 1.868
+Accuracy of the network on the 10000 test images: 48 %
+Highest Accurracy is 48 % from Epoch 7
+[8,   500] loss: 1.847
+Accuracy of the network on the 10000 test images: 48 %
+Highest Accurracy is 48 % from Epoch 7
+[9,   500] loss: 1.820
+Accuracy of the network on the 10000 test images: 49 %
+Highest Accurracy is 49 % from Epoch 9
+[10,   500] loss: 1.791
+Accuracy of the network on the 10000 test images: 51 %
+Highest Accurracy is 51 % from Epoch 10
+[11,   500] loss: 1.766
+Accuracy of the network on the 10000 test images: 51 %
+Highest Accurracy is 51 % from Epoch 10
+[12,   500] loss: 1.743
+Accuracy of the network on the 10000 test images: 51 %
+Highest Accurracy is 51 % from Epoch 10
+[13,   500] loss: 1.720
+Accuracy of the network on the 10000 test images: 51 %
+Highest Accurracy is 51 % from Epoch 10
+[14,   500] loss: 1.706
+Accuracy of the network on the 10000 test images: 52 %
+Highest Accurracy is 52 % from Epoch 14
+[15,   500] loss: 1.687
+Accuracy of the network on the 10000 test images: 52 %
+Highest Accurracy is 52 % from Epoch 14
+[16,   500] loss: 1.672
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[17,   500] loss: 1.656
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[18,   500] loss: 1.647
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[19,   500] loss: 1.636
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[20,   500] loss: 1.627
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[21,   500] loss: 1.619
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[22,   500] loss: 1.613
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 16
+[23,   500] loss: 1.607
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[24,   500] loss: 1.599
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 54 % from Epoch 23
+[25,   500] loss: 1.594
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[26,   500] loss: 1.591
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 54 % from Epoch 23
+[27,   500] loss: 1.589
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[28,   500] loss: 1.586
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 54 % from Epoch 23
+[29,   500] loss: 1.583
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[30,   500] loss: 1.581
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[31,   500] loss: 1.576
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[32,   500] loss: 1.575
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[33,   500] loss: 1.573
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 23
+[34,   500] loss: 1.571
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[35,   500] loss: 1.570
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[36,   500] loss: 1.570
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[37,   500] loss: 1.569
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[38,   500] loss: 1.567
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[39,   500] loss: 1.567
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[40,   500] loss: 1.566
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[41,   500] loss: 1.566
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[42,   500] loss: 1.565
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[43,   500] loss: 1.565
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[44,   500] loss: 1.564
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[45,   500] loss: 1.564
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[46,   500] loss: 1.563
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[47,   500] loss: 1.563
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[48,   500] loss: 1.563
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[49,   500] loss: 1.563
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[50,   500] loss: 1.562
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[51,   500] loss: 1.561
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[52,   500] loss: 1.561
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[53,   500] loss: 1.560
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[54,   500] loss: 1.560
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[55,   500] loss: 1.560
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[56,   500] loss: 1.559
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[57,   500] loss: 1.559
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[58,   500] loss: 1.559
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[59,   500] loss: 1.559
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[60,   500] loss: 1.558
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[61,   500] loss: 1.558
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[62,   500] loss: 1.557
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[63,   500] loss: 1.557
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[64,   500] loss: 1.556
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[65,   500] loss: 1.557
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[66,   500] loss: 1.556
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[67,   500] loss: 1.556
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[68,   500] loss: 1.554
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[69,   500] loss: 1.555
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[70,   500] loss: 1.554
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[71,   500] loss: 1.554
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[72,   500] loss: 1.554
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[73,   500] loss: 1.554
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[74,   500] loss: 1.553
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[75,   500] loss: 1.552
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[76,   500] loss: 1.552
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[77,   500] loss: 1.552
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 34
+[78,   500] loss: 1.551
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[79,   500] loss: 1.551
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
+[80,   500] loss: 1.551
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 34
