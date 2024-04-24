@@ -27,7 +27,7 @@ import warnings
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 warnings.filterwarnings("ignore")
 TEST_DATA_PATH = "facedata/archive2/test/"
-batch_size = 55
+batch_size = 5
 testset = torchvision.datasets.ImageFolder(TEST_DATA_PATH, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size,
                                          shuffle=True, num_workers=2)
@@ -94,17 +94,17 @@ if __name__ == '__main__':
     TEST = './57.pth'
     #dataiter = iter(testloader)
     #images, labels = next(dataiter)
-
+    
     print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(5)))
     net = Net()
-    net.load_state_dict(torch.load(TEST))
+    net.load_state_dict(torch.load(TEST, map_location=torch.device('cpu')))
     with torch.no_grad():
         outputs = net(images)
         _, predicted = torch.max(outputs, 1)
 
     print('Predicted: ', ' '.join(f'{classes[predicted[j]]:5s}'
                             for j in range(5)))
-    #imshow(torchvision.utils.make_grid(images))
+    imshow(torchvision.utils.make_grid(images))
     correct = 0
     total = 0
     # since we're not training, we don't need to calculate the gradients for our outputs
