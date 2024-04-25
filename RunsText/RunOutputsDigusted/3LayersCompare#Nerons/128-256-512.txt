@@ -1,0 +1,163 @@
+Epoch 50
+Batch Size 55
+Learn Rate 0.005
+Running on GPU
+[1,   500] loss: 1.467
+Accuracy of the network on the 10000 test images: 46 %
+Highest Accurracy is 46 % from Epoch 1
+[2,   500] loss: 1.173
+Accuracy of the network on the 10000 test images: 51 %
+Highest Accurracy is 51 % from Epoch 2
+[3,   500] loss: 0.993
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 3
+[4,   500] loss: 0.811
+Accuracy of the network on the 10000 test images: 52 %
+Highest Accurracy is 53 % from Epoch 3
+[5,   500] loss: 0.628
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 5
+[6,   500] loss: 0.442
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 5
+[7,   500] loss: 0.323
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 5
+[8,   500] loss: 0.208
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 55 % from Epoch 5
+[9,   500] loss: 0.154
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 5
+[10,   500] loss: 0.134
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 5
+[11,   500] loss: 0.085
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 5
+[12,   500] loss: 0.052
+Accuracy of the network on the 10000 test images: 56 %
+Highest Accurracy is 56 % from Epoch 12
+[13,   500] loss: 0.034
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[14,   500] loss: 0.024
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[15,   500] loss: 0.015
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[16,   500] loss: 0.012
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[17,   500] loss: 0.012
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[18,   500] loss: 0.008
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[19,   500] loss: 0.008
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 57 % from Epoch 13
+[20,   500] loss: 0.008
+Accuracy of the network on the 10000 test images: 58 %
+Highest Accurracy is 58 % from Epoch 20
+[21,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[22,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[23,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[24,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[25,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[26,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[27,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[28,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[29,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[30,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[31,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[32,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[33,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[34,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[35,   500] loss: 0.005
+Highest Accurracy is 58 % from Epoch 20
+[36,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[37,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[38,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[39,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[40,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[41,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[42,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+[43,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[44,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[45,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[46,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[47,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[48,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[49,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+[50,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 57 %
+Highest Accurracy is 58 % from Epoch 20
+Finished Training
+GroundTruth:  anger anger anger anger anger anger anger anger anger anger
+Predicted:  surprised surprised anger surprised anger anger anger sad   neutral anger
+Accuracy of the network on the 10000 test images: 57 %
+Accuracy for class: anger is 48.2 %
+Accuracy for class: disgust is 50.5 %
+Accuracy for class: fear  is 42.1 %
+Accuracy for class: happy is 77.8 %
+Accuracy for class: sad   is 55.4 %
+Accuracy for class: surprised is 46.4 %
+Accuracy for class: neutral is 69.0 %
