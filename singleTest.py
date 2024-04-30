@@ -6,7 +6,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.transforms.functional as C
 import torch.nn.utils.prune as prune
+"""
+SquarePad, takes an image and squares it by adding padding so each image inputed is similar
 
+:param image: image given to be given square dimensions 
+:type: Image
+:return: Image that is squared
+:rtype: image
+"""
 class SquarePad:
 	def __call__(self, image):
 		w, h = image.size
@@ -15,7 +22,13 @@ class SquarePad:
 		vp = int((max_wh - h) / 2)
 		padding = (hp, vp, hp, vp)
 		return C.pad(image, padding, 0, 'constant')
-    
+     
+#Transformation that is applied to an image given
+#First Squared
+#Transformed to Tensor
+#The tensor's values are normalized
+#The image is resized
+#The image is then greyscaled
 transform = transforms.Compose(
     [
      SquarePad(),
@@ -23,21 +36,32 @@ transform = transforms.Compose(
      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
      transforms.Resize((64, 64)), 
      transforms.Grayscale(3) ])
+
 import torch.optim as optim
 import warnings
+#Set the default device to the gpu if the machine running has one
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+#ignore warnings this is for if  __name__ == __main__
 warnings.filterwarnings("ignore")
-IMAGE_DATA_PATH = "facedata/singleTest/disgust/Disgust_15.jpg"
+#val to check if the user wants a defualt 
+val = -1
+while(val != 1 and val != 0):
+    val = int(input("Enter 0 to enter your own image or 1 to run on the default: "))
+    if val == 0:
+        file = input("Enter the image directory to test on: ") 
+        images = Image.open(file)
+    elif val == 1:
+        #Default Image path to run on
+        IMAGE_DATA_PATH = "facedata/archive/test/disgust/Disgust_17.jpg"
+        images = Image.open(IMAGE_DATA_PATH)
 
-
+#All the classes to be predicted
 classes = ('anger', 'disgust', 'fear', 'happy', 'sad', 'surprised', 'neutral')
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 # functions to show an image
-
- 
 def imshow(img):
     img = img / 2 + 0.5     # unnormalize
     npimg = img.numpy()
@@ -45,10 +69,9 @@ def imshow(img):
     plt.show()
 
 class Net(nn.Module):
+    #Define the module functions
     def __init__(self):
         super().__init__()
-
-
         self.conv1 = nn.Conv2d(3, 64, (3,3)) 
         self.batchnorm1 = nn.BatchNorm2d(64)
         self.pool = nn.MaxPool2d(2, 2)
@@ -65,7 +88,7 @@ class Net(nn.Module):
         self.fc3 = nn.Linear(84, 10)
         self.dropout = nn.Dropout(0.25)
        
-    
+    #calls for the classes functions, not all functions are called 
     def forward(self, x):
         x = self.pool(((F.relu(self.conv1(x)))))
         x = (self.batchnorm1(x))
@@ -84,28 +107,27 @@ class Net(nn.Module):
         return x
    
 if __name__ == '__main__':
-# get some random training images
-    images = Image.open(IMAGE_DATA_PATH)
-    images = transform(images)
-# show images
-            
+    #Transform the single image
+    images = transform(images)       
+    #Model used
     TEST = './57.pth'
-    
-    #dataiter = iter(testloader)
-    #images, labels = next(dataiter)
-    
-    #print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(5)))
+    #Define the models functions
     net = Net()
+    #Load the saved model
     net.load_state_dict(torch.load(TEST, map_location=torch.device('cpu')))
+    #With the model not to learn have it run on the image
     with torch.no_grad():
         outputs = net(images.unsqueeze(0))
+        #Get the probablities for all labels
         softmaxpredicted = torch.softmax(outputs, 1)
+        #Get the label it thinks is most accurate
         mostPredicted = torch.argmax(outputs, 1)
-
+    #Print all the info given
     print('Predicted Probablities:')
     for j in range(len(classes)):
          print(classes[j], softmaxpredicted[0][j])
     print('Argmax Prediction:', mostPredicted)
+    #Print the image after it is done to show the transformation
     imshow(torchvision.utils.make_grid(images))
 
 

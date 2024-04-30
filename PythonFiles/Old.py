@@ -1,3 +1,4 @@
+#First successful running verison on the datasets
 import torch
 import torchvision
 import torchvision.transforms as transforms

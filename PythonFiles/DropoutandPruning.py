@@ -1,3 +1,4 @@
+#File that was used to test dropout and pruning the model
 import torch
 import torchvision
 import torchvision.transforms as transforms

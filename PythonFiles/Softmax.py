@@ -1,3 +1,4 @@
+#This file was used to help learn what softmax was. I used it wrong but the day I wasted testing it wasnt worth getting rid of 
 import torch
 import torchvision
 import torchvision.transforms as transforms

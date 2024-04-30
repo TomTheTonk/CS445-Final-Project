@@ -1,3 +1,4 @@
+#File that checks if cude if avaible this was used when I was getting pytorch cude running
 import torch.cuda
 
 print(torch.version.cuda)

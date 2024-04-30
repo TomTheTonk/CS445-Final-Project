@@ -1,3 +1,4 @@
+#Running the model on two conv layers also had retraining that was not useful
 import torch
 import torchvision
 import torchvision.transforms as transforms

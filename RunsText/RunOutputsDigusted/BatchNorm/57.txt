@@ -1,4 +1,4 @@
-Epoch 500
+Epoch 50
 Batch Size 55
 Learn Rate 0.005
 Running on GPU

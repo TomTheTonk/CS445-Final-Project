@@ -5,7 +5,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.transforms.functional as C
 import torch.nn.utils.prune as prune
+"""
+SquarePad, takes an image and squares it by adding padding so each image inputed is similar
 
+:param image: image given to be given square dimensions 
+:type: Image
+:return: Image that is squared
+:rtype: image
+"""
 class SquarePad:
 	def __call__(self, image):
 		w, h = image.size
@@ -14,7 +21,12 @@ class SquarePad:
 		vp = int((max_wh - h) / 2)
 		padding = (hp, vp, hp, vp)
 		return C.pad(image, padding, 0, 'constant')
-    
+#Transformation that is applied to an image given
+#First Squared
+#Transformed to Tensor
+#The tensor's values are normalized
+#The image is resized
+#The image is then greyscaled
 transform = transforms.Compose(
     [
      SquarePad(),
@@ -24,33 +36,35 @@ transform = transforms.Compose(
      transforms.Grayscale(3) ])
 import torch.optim as optim
 import warnings
+#Set the default device to the gpu if the machine running has one
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+#ignore warnings this is for if  __name__ == __main__
 warnings.filterwarnings("ignore")
+#Path for the model to run through
 TEST_DATA_PATH = "facedata/archive2/test/"
+#Batch size doesnt matter since the model is already trained. Here it just is how many images you want to display the data for
 batch_size = 5
+#Define the datasets to run through
 testset = torchvision.datasets.ImageFolder(TEST_DATA_PATH, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size,
                                          shuffle=True, num_workers=2)
-
+#Labels to be assigned to the dataset
 classes = ('anger', 'disgust', 'fear', 'happy', 'sad', 'surprised', 'neutral')
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 # functions to show an image
-
- 
 def imshow(img):
     img = img / 2 + 0.5     # unnormalize
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
     plt.show()
-
+#Class for the model loaded
 class Net(nn.Module):
     def __init__(self):
+         #Define the model functions
         super().__init__()
-
-
         self.conv1 = nn.Conv2d(3, 64, (3,3)) 
         self.batchnorm1 = nn.BatchNorm2d(64)
         self.pool = nn.MaxPool2d(2, 2)
@@ -67,8 +81,8 @@ class Net(nn.Module):
         self.fc3 = nn.Linear(84, 10)
         self.dropout = nn.Dropout(0.25)
        
-    
     def forward(self, x):
+        #calls for the classes functions, not all functions are called 
         x = self.pool(((F.relu(self.conv1(x)))))
         x = (self.batchnorm1(x))
         x = self.pool(((F.relu(self.conv2(x)))))
@@ -89,24 +103,28 @@ if __name__ == '__main__':
 # get some random training images
     dataiter = iter(testloader)
     images, labels = next(dataiter)
-# show images
-            
+#Path to the model to load
     TEST = './57.pth'
-    #dataiter = iter(testloader)
-    #images, labels = next(dataiter)
-    
+#Print the truth for the first 5 images
     print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(5)))
+#Define the model then load it
     net = Net()
     net.load_state_dict(torch.load(TEST, map_location=torch.device('cpu')))
+#Run through the dataset's first 5 with the model
+# since we're not training, we don't need to calculate the gradients for our outputs
     with torch.no_grad():
         outputs = net(images)
         _, predicted = torch.max(outputs, 1)
-
+#Print the predicted labels for the first 5 images
     print('Predicted: ', ' '.join(f'{classes[predicted[j]]:5s}'
                             for j in range(5)))
+#Show the first 5 images
     imshow(torchvision.utils.make_grid(images))
+    #Int with how many images correctly labeled
     correct = 0
+    #Int with the total images
     total = 0
+    #Run the model on all the dataset images
     # since we're not training, we don't need to calculate the gradients for our outputs
     with torch.no_grad():
         for data in testloader:
@@ -117,8 +135,9 @@ if __name__ == '__main__':
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-
+    #Print the accuracy on the dataset
     print(f'Accuracy of the network on the test images: {100 * correct // total} %')
+
     correct_pred = {classname: 0 for classname in classes}
     total_pred = {classname: 0 for classname in classes}
     accuracy = 100 * correct // total
@@ -134,13 +153,10 @@ if __name__ == '__main__':
                     correct_pred[classes[label]] += 1
                 total_pred[classes[label]] += 1
 
-
     # print accuracy for each class
     for classname, correct_count in correct_pred.items():
         accuracy = 100 * float(correct_count) / total_pred[classname]
         print(f'Accuracy for class: {classname:5s} is {accuracy:.1f} %')
-    # print images
-
 
 
 
