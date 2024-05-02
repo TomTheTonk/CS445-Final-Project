@@ -7,7 +7,10 @@ Creating an emotion recongition sequential cnn model.
         https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer?rvi=1
     Put both into a folder called facedata and rename the bottom link to archive2
     The first dataset is high quality images that are good for testing and the last is better for training
+
+    
     ![Folders Example](FolderExample.png)
+
     Should look like this
 3. Run singleTest on default to confirm it all works
 4. If it fails you can check the yaml file for any missed installs

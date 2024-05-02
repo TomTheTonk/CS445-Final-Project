@@ -1,3 +1,4 @@
+#Last file used for training
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -76,30 +77,30 @@ class Net(nn.Module):
     def __init__(self):
         #Define the module functions
         super().__init__()
-        self.conv1 = nn.Conv2d(3, 64, (3,3)) 
-        self.batchnorm1 = nn.BatchNorm2d(64)
+        self.conv1 = nn.Conv2d(3, 256, (3,3)) 
+        self.batchnorm1 = nn.BatchNorm2d(256)
         self.pool = nn.MaxPool2d(2, 2)
-        self.conv2 = nn.Conv2d(64, 128, (3,3))
-        self.batchnorm2 = nn.BatchNorm2d(128)
-        self.conv3 = nn.Conv2d(128, 256, (3,3))
-        self.batchnorm3 = nn.BatchNorm2d(256)
+        self.conv2 = nn.Conv2d(256, 512, (3,3))
+        self.batchnorm2 = nn.BatchNorm2d(512)
+        self.conv3 = nn.Conv2d(512, 1006, (3,3))
+        self.batchnorm3 = nn.BatchNorm2d(1006)
         self.conv4 = nn.Conv2d(128, 256, (3,3))
         self.batchnorm4 = nn.BatchNorm2d(256)
         self.conv5 = nn.Conv2d(256, 512, (2,2))
         self.batchnorm5 = nn.BatchNorm2d(512)
-        self.fc1 = nn.Linear(9216, 120)
-        self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 10)
+        self.fc1 = nn.Linear(36216, 1500)
+        self.fc2 = nn.Linear(1500, 750)
+        self.fc3 = nn.Linear(750, 10)
         self.dropout = nn.Dropout(0.25)
        
     #calls for the classes functions, not all functions are called 
     def forward(self, x):
         x = self.pool(((F.relu(self.conv1(x)))))
-        x = self.dropout(self.batchnorm1(x))
+        x = (self.batchnorm1(x))
         x = self.pool(((F.relu(self.conv2(x)))))
-        x = self.dropout(self.batchnorm2(x))
+        x = (self.batchnorm2(x))
         x = self.pool(F.relu(self.conv3(x)))
-        x = self.dropout(self.batchnorm3(x))
+        x = (self.batchnorm3(x))
         #x = self.pool(F.relu(self.conv4(x)))
         #x = self.batchnorm4(x)
         #x = self.pool(F.relu(self.conv5(x)))

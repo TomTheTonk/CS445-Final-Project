@@ -67,7 +67,7 @@ def imshow(img):
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
     plt.show()
-
+"""
 class Net(nn.Module):
     #Define the module functions
     def __init__(self):
@@ -105,7 +105,45 @@ class Net(nn.Module):
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
         return x
-   
+"""
+class Net(nn.Module):
+    def __init__(self):
+        #Define the module functions
+        super().__init__()
+        self.conv1 = nn.Conv2d(3, 256, (3,3)) 
+        self.batchnorm1 = nn.BatchNorm2d(256)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(256, 512, (3,3))
+        self.batchnorm2 = nn.BatchNorm2d(512)
+        self.conv3 = nn.Conv2d(512, 1006, (3,3))
+        self.batchnorm3 = nn.BatchNorm2d(1006)
+        self.conv4 = nn.Conv2d(128, 256, (3,3))
+        self.batchnorm4 = nn.BatchNorm2d(256)
+        self.conv5 = nn.Conv2d(256, 512, (2,2))
+        self.batchnorm5 = nn.BatchNorm2d(512)
+        self.fc1 = nn.Linear(36216, 500)
+        self.fc2 = nn.Linear(500, 250)
+        self.fc3 = nn.Linear(250, 10)
+        self.dropout = nn.Dropout(0.25)
+        
+    #calls for the classes functions, not all functions are called 
+    def forward(self, x):
+        x = self.pool(((F.relu(self.conv1(x)))))
+        x = (self.batchnorm1(x))
+        x = self.pool(((F.relu(self.conv2(x)))))
+        x = (self.batchnorm2(x))
+        x = self.pool(F.relu(self.conv3(x)))
+        x = (self.batchnorm3(x))
+        #x = self.pool(F.relu(self.conv4(x)))
+        #x = self.batchnorm4(x)
+        #x = self.pool(F.relu(self.conv5(x)))
+        #x = self.batchnorm5(x)
+        x = torch.flatten(x, 1) # flatten all dimensi        ons except batch
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
 if __name__ == '__main__':
     #Transform the single image
     images = transform(images)       
