@@ -1,4 +1,4 @@
-#Last file used for training
+#The file created from this is too big to push to github
 import torch
 import torchvision
 import torchvision.transforms as transforms

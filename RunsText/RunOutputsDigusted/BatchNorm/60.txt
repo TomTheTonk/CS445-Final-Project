@@ -1,0 +1,185 @@
+Epoch 200
+Batch Size 55
+Learn Rate 0.005
+Running on GPU
+[1,   500] loss: 1.431
+Accuracy of the network on the 10000 test images: 47 %
+Highest Accurracy is 47 % from Epoch 1
+[2,   500] loss: 1.109
+Accuracy of the network on the 10000 test images: 53 %
+Highest Accurracy is 53 % from Epoch 2
+[3,   500] loss: 0.865
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 54 % from Epoch 3
+[4,   500] loss: 0.591
+Accuracy of the network on the 10000 test images: 55 %
+Highest Accurracy is 55 % from Epoch 4
+[5,   500] loss: 0.355
+Accuracy of the network on the 10000 test images: 54 %
+Highest Accurracy is 55 % from Epoch 4
+[6,   500] loss: 0.197
+Accuracy of the network on the 10000 test images: 56 %
+Highest Accurracy is 56 % from Epoch 6
+[7,   500] loss: 0.099
+Accuracy of the network on the 10000 test images: 56 %
+Highest Accurracy is 56 % from Epoch 6
+[8,   500] loss: 0.058
+Accuracy of the network on the 10000 test images: 58 %
+Highest Accurracy is 58 % from Epoch 8
+[9,   500] loss: 0.035
+Accuracy of the network on the 10000 test images: 58 %
+Highest Accurracy is 58 % from Epoch 8
+[10,   500] loss: 0.019
+Accuracy of the network on the 10000 test images: 59 %
+Highest Accurracy is 59 % from Epoch 10
+[11,   500] loss: 0.015
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[12,   500] loss: 0.010
+Accuracy of the network on the 10000 test images: 59 %
+Highest Accurracy is 60 % from Epoch 11
+[13,   500] loss: 0.009
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[14,   500] loss: 0.008
+Accuracy of the network on the 10000 test images: 59 %
+Highest Accurracy is 60 % from Epoch 11
+[15,   500] loss: 0.007
+Accuracy of the network on the 10000 test images: 59 %
+Highest Accurracy is 60 % from Epoch 11
+[16,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[17,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[18,   500] loss: 0.006
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[19,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[20,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[21,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[22,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[23,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[24,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[25,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[26,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[27,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[28,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[29,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[30,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[31,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[32,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[33,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[34,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[35,   500] loss: 0.005
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[36,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[37,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[38,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[39,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[40,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[41,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[42,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[43,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[44,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+[45,   500] loss: 0.004
+Accuracy of the network on the 10000 test images: 60 %
+Highest Accurracy is 60 % from Epoch 11
+    def __init__(self):
+        #Define the module functions
+        super().__init__()
+        self.conv1 = nn.Conv2d(3, 256, (3,3)) 
+        self.batchnorm1 = nn.BatchNorm2d(256)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(256, 512, (3,3))
+        self.batchnorm2 = nn.BatchNorm2d(512)
+        self.conv3 = nn.Conv2d(512, 1006, (3,3))
+        self.batchnorm3 = nn.BatchNorm2d(1006)
+        self.conv4 = nn.Conv2d(128, 256, (3,3))
+        self.batchnorm4 = nn.BatchNorm2d(256)
+        self.conv5 = nn.Conv2d(256, 512, (2,2))
+        self.batchnorm5 = nn.BatchNorm2d(512)
+        self.fc1 = nn.Linear(36216, 1000)
+        self.fc2 = nn.Linear(1000, 500)
+        self.fc3 = nn.Linear(500, 10)
+        self.dropout = nn.Dropout(0.25)
+       
+    #calls for the classes functions, not all functions are called 
+    def forward(self, x):
+        x = self.pool(((F.relu(self.conv1(x)))))
+        x = (self.batchnorm1(x))
+        x = self.pool(((F.relu(self.conv2(x)))))
+        x = (self.batchnorm2(x))
+        x = self.pool(F.relu(self.conv3(x)))
+        x = (self.batchnorm3(x))
+        #x = self.pool(F.relu(self.conv4(x)))
+        #x = self.batchnorm4(x)
+        #x = self.pool(F.relu(self.conv5(x)))
+        #x = self.batchnorm5(x)
+        x = torch.flatten(x, 1) # flatten all dimensi        ons except batch
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+GroundTruth:  happy happy fear  happy disgust
+Predicted:  happy happy fear  happy anger
+Accuracy of the network on the test images: 61 %
+Accuracy for class: anger is 51.6 %
+Accuracy for class: disgust is 52.3 %
+Accuracy for class: fear  is 44.3 %
+Accuracy for class: happy is 80.6 %
+Accuracy for class: sad   is 57.6 %
+Accuracy for class: surprised is 49.9 %
+Accuracy for class: neutral is 77.7 %
